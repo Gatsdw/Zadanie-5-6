@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:layout_marginVertical="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wydarzenie w sudetach"
+        android:textSize="22dp"
+        android:layout_gravity="center"
+        android:padding="10dp"/>
+
+    <ImageView
+        android:id="@+id/hillImage"
+        android:layout_width="match_parent"
+        android:layout_height="259dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/view" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="5dp"
+        android:background="#aaabfa"/>
+
+    <TextView
+        android:id="@+id/Counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="8dp"
+        android:text="0 polubień"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/likeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#aaabfa"
+            android:text="Polub"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#aaabfa"
+            android:text="Usuń"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="0dp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="#aaabfa"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#aaabfa"
+        android:hint="Podaj e-mail"
+        android:inputType="textEmailAddress"
+        android:textSize="15dp"
+        tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/pass1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#aaabfa"
+        android:hint="Wprowadź hasło"
+        android:inputType="textPassword"
+        android:textSize="15dp"
+        tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/pass2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#aaabfa"
+        android:hint="Powtórz hasło"
+        android:inputType="textPassword"
+        android:textSize="15dp"
+        tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zapisz"
+        android:backgroundTint="#aaabfa"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zobacz uczestnika"
+        android:backgroundTint="#aaabfa"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/comm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=""/>
+
+
+
+</LinearLayout>
